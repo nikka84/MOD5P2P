@@ -96,7 +96,7 @@ class Game {
         if (this.opponent) {
             document.body.removeChild(this.opponent.image);
         }
-        if (this.score===1){
+        if (this.score===3){
             this.opponent = new Boss(this);
             this.opponent.image.src = "assets/boss1.png";
         } else {
