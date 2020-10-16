@@ -98,6 +98,7 @@ class Game {
         }
         if (this.score===1){
             this.opponent = new Boss(this);
+            this.opponent.image.src = "assets/boss1.png";
         } else {
             this.opponent = new Opponent(this);
         }

@@ -1,6 +1,11 @@
 html {
   overflow: hidden;
 }
+body {
+	margin: 0;
+	padding: 0;
+	background: rgba(128, 128, 128, 0.8);
+}
 
 .Opponent {
 	animation: rotation 3s infinite linear;
@@ -23,16 +28,34 @@ html {
 	}
 }
 
+
 .gamebutton {
+	background-color: teal;
 	border: none;
-	background: #ddd;
-	color: #333;
-	padding: 10px 20px;
 	outline: none;
-	font-family: monospace;
+	padding: 0px;	
 	cursor: pointer;
+	color: white;
+	font-family: monospace;
+	font-size: 110%;
+}
+
+.gamebutton:hover {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+ul{
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ width: 35%;
 }
 
 ul li {
+	background-color: teal;
 	list-style: none;
+	padding: 10px 15px;
+	color: white;
+	font-family: monospace;
+	font-size: 110%;
 }
